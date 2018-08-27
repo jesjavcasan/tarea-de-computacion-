@@ -4,23 +4,33 @@ este es el codigo fuente del juego
 
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <conio.h>
+
+#include <stdlib.h
+
+#include <time.h
+
+#include <conio.h
+
 #include <windows.h>
  
 void wait(int seconds)
 {
+
     clock_t endwait;
+    
     endwait = clock() + seconds * CLOCKS_PER_SEC;
+    
     while( clock() < endwait ){}
 }
  
 void imprimir();
+
 void iniciar();
  
 int i, j, k, jugador[6][10], oponente[6][10], opcion1, opcion2, puntajejugador = 0, puntajeoponente = 0; 
+
 time_t start,end;
+
 double dif, tiempototal=0;
  
 
